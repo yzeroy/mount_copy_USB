@@ -7,12 +7,7 @@ export PATH=/bin:/usr/bin
 PATTERN="*.gcode"
 
 # For Raspberry Pi use 
-#DESTINATION="/home/pi/printer_data/gcodes"
-
-# For BIQU CB 1 modul use
-DESTINATION="/home/biqu/printer_data/gcodes" 
-# =========
-
+DESTINATION="/home/pi/printer_data/gcodes"
 
 # The block device name is expected to be passed as the first argument.
 device="$1"
