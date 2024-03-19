@@ -5,6 +5,8 @@ USB Flash nepoužívejte pěhem tisku.
 Dojde k přepsání nebo smazání souboru se stejným jménem 
 který se právě tiskne.
 
+Script předpokládá, že uživatel má uživatelské jméno "pi" a gcode soubory jsou uložené ve složce "/home/pi/printer_data/gcodes"
+
 
 Funkce
 ======
@@ -19,14 +21,15 @@ Funkce
 Instalace
 =========
 1. git clone https://github.com/yzeroy/mount_copy_USB.git
-   cd mount_copy_USB
+   
+2. cd mount_copy_USB
 
-2. sudo cp 99-mountcopy.rules /etc/udev/rules.d/
+3. sudo cp 99-mountcopy.rules /etc/udev/rules.d/
 
-3. sudo cp mountcopy /usr/bin
+4. sudo cp mountcopy /usr/bin
    sudo chmod +x /usr/bin/mountcopy
 
-4. sudo udevadm control --reload-rules && sudo udevadm trigger
+5. sudo udevadm control --reload-rules && sudo udevadm trigger
 
 
 
